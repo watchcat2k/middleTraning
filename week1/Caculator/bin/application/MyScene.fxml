@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="262.0" prefWidth="212.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <GridPane layoutY="45.0" prefHeight="230.0" prefWidth="239.0" style="-fx-background-color: #EEEEEE;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onMouseClicked="#addButtonClick" prefHeight="50.0" prefWidth="55.0" text="+" GridPane.columnIndex="3" />
+            <Button fx:id="divideButton" mnemonicParsing="false" onMouseClicked="#divideButtonClick" prefHeight="50.0" prefWidth="55.0" text="/" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="mulButton" mnemonicParsing="false" onMouseClicked="#mulButtonClick" prefHeight="50.0" prefWidth="55.0" text="*" GridPane.rowIndex="3" />
+            <Button fx:id="subButton" mnemonicParsing="false" onMouseClicked="#subButtonClick" prefHeight="50.0" prefWidth="55.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="okButton" mnemonicParsing="false" onMouseClicked="#okButtonClick" prefHeight="50.0" prefWidth="55.0" text="OK" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="num7Button" mnemonicParsing="false" onMouseClicked="#num7ButtonClick" prefHeight="50.0" prefWidth="55.0" text="7" />
+            <Button fx:id="num8Button" mnemonicParsing="false" onMouseClicked="#num8ButtonClick" prefHeight="50.0" prefWidth="55.0" text="8" GridPane.columnIndex="1" />
+            <Button fx:id="num9Button" mnemonicParsing="false" onMouseClicked="#num9ButtonClick" prefHeight="50.0" prefWidth="55.0" text="9" GridPane.columnIndex="2" />
+            <Button fx:id="num4Button" mnemonicParsing="false" onMouseClicked="#num4ButtonClick" prefHeight="50.0" prefWidth="55.0" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="num5Button" mnemonicParsing="false" onMouseClicked="#num5ButtonClick" prefHeight="50.0" prefWidth="55.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="num6Button" mnemonicParsing="false" onMouseClicked="#num6ButtonClick" prefHeight="50.0" prefWidth="55.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="num1Button" mnemonicParsing="false" onMouseClicked="#num1ButtonClick" prefHeight="50.0" prefWidth="55.0" text="1" GridPane.rowIndex="2" />
+            <Button fx:id="num2Button" mnemonicParsing="false" onMouseClicked="#num2ButtonClick" prefHeight="50.0" prefWidth="55.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="num3Button" mnemonicParsing="false" onMouseClicked="#num3ButtonClick" prefHeight="50.0" prefWidth="55.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="num0Button" mnemonicParsing="false" onMouseClicked="#num0ButtonClick" prefHeight="50.0" prefWidth="55.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="delButton" mnemonicParsing="false" onMouseClicked="#delButtonClick" prefHeight="50.0" prefWidth="55.0" text="DEL" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <TextField fx:id="result" editable="false" layoutY="4.0" prefHeight="36.0" prefWidth="239.0" />
+   </children>
+</AnchorPane>
